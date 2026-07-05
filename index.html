@@ -6,26 +6,47 @@
     <title>Curso para aprender TailWindCSS</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-black text-white">
-    <header >
-        <h1>Curso para aprender TailWindCSS</h1>
-        <p>Este es un curso completo para aprender TailWindCSS desde cero.</p>
-        <div class="flex gap-4 text-white">
-            <svg width="28" height="28">
-                <use xlink:href="./assets/sprite.svg#instagram"></use>
-            </svg>
-            <a class="cursor-pointer" href="https://www.youtube.com/@martinpiccato" target="_blank">
-                <svg width="28" height="28">
+<body class="max-w-xl mx-auto border border-black min-h-dvh
+    bg-gradient-to-b from-black via-sky-950 to-gray-800 text-white bg-slate-900">
+    <header class="flex flex-col gap-4 items-center justify-center p-4">
+        <img class="h-96 object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-80% justify-center" alt="Foto de perfil" src="./assets/Foto_Perfil.jpg"/>
+        <section class="flex gap-2 items-center justify-center">
+            <!-- Instagram -->
+            <a href="#" target="_blank" title="Ir a mi perfil de Instagram" aria-label="Instagram"
+               class="p-2 flex items-center justify-center rounded-full bg-slate-800 transition-all duration-300 hover:scale-110 hover:text-white hover:bg-orange-700 bg-gradient-to-tr from-yellow-300 via-pink-500 to-purple-700">
+                <svg width="25" height="25" class="fill-current">
+                    <use xlink:href="./assets/sprite.svg#instagram"></use>
+                </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@martinpiccato" target="_blank" title="Ir a mi canal de YouTube" aria-label="Youtube"
+               class="p-2 flex items-center justify-center rounded-full bg-slate-800 transition-all duration-300 hover:scale-110 hover:text-white hover:bg-orange-500">
+                <svg width="25" height="25" class="fill-current">
                     <use xlink:href="./assets/sprite.svg#youtube"></use>
                 </svg>
             </a>
-            
-            <svg width="28" height="28">
-                <use xlink:href="./assets/sprite.svg#linkedin"></use>
-            </svg>
-            <svg width="28" height="28">
-                <use class= xlink:href="./assets/sprite.svg#verified"></use>
-        </div>
+            <!-- LinkedIn -->
+            <a href="#" target="_blank" title="Ir a mi perfil de Linkedin" aria-label="LinkedIn"
+               class="p-2 flex items-center justify-center rounded-full bg-slate-800 transition-all duration-300 hover:scale-110 hover:text-white hover:bg-orange-500">
+                <svg width="25" height="25" class="fill-current">
+                    <use xlink:href="./assets/sprite.svg#linkedin"></use>
+                </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="#" target="_blank" title="Ir a mi perfil de GitHub" aria-label="GitHub"
+               class="p-2 flex items-center justify-center rounded-full bg-slate-800 transition-all duration-300 hover:scale-110 hover:text-white hover:bg-orange-500">
+                <svg width="25" height="25" class="fill-current">
+                    <use xlink:href="./assets/sprite.svg#github"></use>
+                </svg>
+            </a>
+            <!-- X (Twitter) -->
+            <a href="#" target="_blank" title="Ir a mi perfil de X" aria-label="X"
+               class="p-2 flex items-center justify-center rounded-full bg-slate-800 transition-all duration-300 hover:scale-110 hover:text-white hover:bg-orange-500">
+                <svg width="25" height="25" class="fill-current">
+                    <use xlink:href="./assets/sprite.svg#x"></use>
+                </svg>
+            </a>
+        </section>
         
     </header>
     <main>
